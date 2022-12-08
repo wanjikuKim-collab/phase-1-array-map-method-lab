@@ -1,3 +1,12 @@
+// create a new array of title cased string
+
+const titleCased=(first)=>{
+  let cap = tutorials.map(first=>{
+   first.split(" ")
+    return first.split(" ").map(word=>word[0].toUpperCase()+word.slice(1)).join(" ")
+  });
+  return cap;
+}
 const tutorials = [
   'what does the this keyword mean?',
   'What is the Constructor OO pattern?',
@@ -11,6 +20,11 @@ const tutorials = [
   'what is JSONP?'
 ];
 
-const titleCased = () => {
-  return tutorials
-}
+console.log(titleCased(tutorials))
+
+
+
+
+
+
+
